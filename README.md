@@ -6,6 +6,8 @@ real or digital expedition
 - you can shop in the commercial center
 - you've got a bank account and digital id
 - you go across cities, and you want to make people connect
+- you can set yourself
+- you can set someone else
 
 - 
 - there's a resume matcher
