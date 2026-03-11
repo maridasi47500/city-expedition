@@ -1,4 +1,5 @@
 # city-expedition
+![fake description](pic1.png)
 real or digital expedition
 - this i not only digital expedition
 - you can book plane ticket, event ticket, concert ticket
