@@ -1,8 +1,17 @@
+{% extends 'base.html' %}
+
+{% block montitre %}
+debut de mes mots: bienvneue dans digital expedition
+{% endblock %}
+{% block content %}
 <h1># city-expedition</h1>
-<h1># city-expedition</h1>
-<h2>digital expedition</h2>
-<p>le CV matche à {{ matchpercentage }} </p>
-<p>quelle est ta base de données electronique ? <textarea></textarea></p>
-<p>quelle est ta banque/compte bancaire <textarea></textarea></p>
-<p>quelle est ton billet d'avion/ticket de concert <textarea></textarea></p>
-<p>dans quelles ville vas tu aller? <textarea></textarea></p>
+{% for x in users | reverse %}
+ <li>{{ x["first_name"]  }}</li>
+
+{% endfor %} 
+fin de mes mots : bienvenue dans digital expedition, tu matches des cv, ou tu fais des rencontres musicales, tu fais un voyage, et tu fais une expedition numerique, tu trouves un carnet de numeros/email avec noms avant de visiter une ville.
+{% endblock %}
+{% block liens %}
+<a href="/">welcome</a>
+{% endblock %}
+<a href="/add_one_plane_ticket"> add one plane_ticket</a><a href="/add_one_resume"> add one resume</a><a href="/add_one_person"> add one person</a><a href="/add_one_company"> add one company</a><a href="/add_one_linkpersoncompany"> add one linkpersoncompany</a><a href="/add_one_musicsession"> add one musicsession</a><a href="/add_one_participantjamuser"> add one participantjamuser</a><a href="/add_one_participantjamperson"> add one participantjamperson</a><a href="/add_one_city"> add one city</a><a href="/add_one_resume_matcher"> add one resume_matcher</a><a href="/add_one_concert"> add one concert</a><a href="/add_one_user"> add one user</a><a href="/add_one_concert_ticket"> add one concert_ticket</a>
